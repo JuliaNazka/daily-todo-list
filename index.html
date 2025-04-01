@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily To Do List</h1>
+
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Adicione uma nova tarefa...">
+            <button id="addButton">+</button>
+        </div>
+            <h3>Tarefas Concluídas: <span id="completedCount">0</span></h3>
+
+            <div class="priority-selector">
+                <button class="priority-btn priority-high active" data-priority="high">Alta</button>
+                <button class="priority-btn priority-medium" data-priority="medium">Média</button>
+                <button class="priority-btn priority-low" data-priority="low">Baixa</button>
+            </div>
+            <div class="input-container">
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
